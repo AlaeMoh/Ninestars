@@ -1,0 +1,261 @@
+:root{
+    --main-color:#eb5d1e;
+    --backgroud-color:#fef8f5;
+    --font-color:#4e4039;
+    --fontb-color:#7a6960;
+    --fontsec-color:#a08f86;
+    --fontlst-color:#212529;
+    --font-family:"Raleway", sans-serif;
+    --fontb-family:"Open Sans", sans-serif;
+
+}
+
+.navbar{
+    background-color: white;
+    width: 100%;
+    position: fixed;
+    z-index: 5;
+}
+
+.navbar-nav{
+    width: 600px;
+    position: relative;
+    left: 400px;
+    
+}
+
+.navbar-brand{
+    color: var(--fontb-color);
+    font-family: var(--font-family);
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+
+
+
+.nav-item{
+    font-family: var(--fontb-family);
+    font-size: 16px;
+    color: var(--font-color);
+    padding-left: 10px;
+    
+}
+
+.btn{
+    width: 130px;
+    height: 40px;
+    background-color: var(--main-color);
+    color: white;
+    border-radius: 40px;
+    border: none;
+    margin-right: 20px;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    -ms-border-radius: 40px;
+    -o-border-radius: 40px;
+}
+
+.btn:hover{
+ background-color:#ee7843 ;   
+}
+
+/* END OF NAVBAR */
+
+
+/* Intro Secrion */
+.sec1{
+    background-color: var(--backgroud-color);
+    border-bottom: 5px;
+    border-color: #fcebe3;
+    border-style: solid;
+}
+.container{
+    height: 85vh;
+    padding-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.intro{
+    width: 50%;
+}
+
+.intro h1{
+    font-family: var(--font-family);
+    font-size: 48px;
+    font-weight: 700;
+    color: rgb(78, 64, 57);
+}
+
+.intro h2{
+    font-family: var(--font-family);
+    font-size: 24px;
+    color: var(--fontsec-color);
+    font-weight: 400;
+}
+
+.bottn{
+    width: 150px;
+    height: 40px;
+    font-family: var(--font-family);
+    background-color: var(--main-color);
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    border-radius: 5px;
+    margin-top: 30px;
+}
+
+.intro-pic{
+    width: 50%;
+    top: 0px;
+    position: relative;
+    animation-name: pic;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction:alternate-reverse both;
+
+
+    
+    
+}
+
+.intro-pic img{
+    width: 100%;
+}
+
+/* annimation */
+@keyframes pic {
+    0% {top: 0px}
+    50%{top: 20px;}
+    100%{top:0px;}
+    
+}
+
+
+
+/* section2 */
+
+
+.container-2{
+    height: 80vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.pic2{
+    width: 50%;
+    height: 70vh;
+
+}
+
+.pic2 img {
+    width: 445px;
+    height: 290px;
+    margin-top: 60px;
+    margin-left: 60px;
+}
+
+.decription{
+    width: 50%;
+    height: 70vh;
+    line-height: 25px;
+}
+
+.decription h3 {
+    font-weight: 600;
+    font-size: 34px;
+    color: var(--font-color);
+    margin-top: 40px;
+}
+
+.decription p {
+    font-size: 15px;
+    color: #5a6570;
+}
+
+.col-md-6 i{
+    font-size: 40px;
+    color:#f39e7a;
+    padding-left: 10px;
+}
+
+/* End Of Section 2 */
+
+/* Section 3 */
+
+.container-3{
+    height: 100vh;
+    background-color: tomato;
+}
+
+.service{
+    height: 150px;
+    background-color: teal;
+    text-align: center;
+}
+
+.service h3{
+    font-size: 24px;
+    font-weight: 700;
+    color: #c2b7b1;
+    padding-top: 30px;
+}
+
+.service p {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--font-color);
+    position: relative;
+
+}
+
+.service p::after{
+    content: " ";
+    width: 60px;
+    background-color:var(--main-color);;
+    height: 2px;
+    position: absolute;
+    left: 600px;
+    top:60px;
+    
+}
+
+.row-1{
+    height: 70vh;
+    background-color: #09c;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.col-md-2{
+    background-color: gray;
+    height: 350px;
+    border-radius: 10px;
+    
+}
+.col-md-2 i {
+    font-size: 40px;
+}
+
+.col-md-2 p{
+    font-size: 15px;
+}
+
+
+@media screen and (max-width:1000px) {
+    
+    .sec1 .sec2{
+        display: block;
+    }
+    .container-2{
+        display: block;
+    }
+    .pic2{
+        width: 100px;
+    }
+}
