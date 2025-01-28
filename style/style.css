@@ -188,12 +188,11 @@
 
 .container-3{
     height: 100vh;
-    background-color: tomato;
+    background-color: #fff2eb;
 }
 
 .service{
     height: 150px;
-    background-color: teal;
     text-align: center;
 }
 
@@ -225,26 +224,123 @@
 
 .row-1{
     height: 70vh;
-    background-color: #09c;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     text-align: center;
+    padding-top: 30px;
 }
 
-.col-md-2{
-    background-color: gray;
-    height: 350px;
+.item1{
+    height: 280px;
     border-radius: 10px;
+    width: 255px;
+    line-height: 30px;
+    background-color: white;
     
-}
-.col-md-2 i {
-    font-size: 40px;
+    }
+
+.item1:hover{
+    border-bottom: 5px;
+    border-bottom-style: solid;
+    border-color: var(--main-color);
+    position: relative;
+    top: -5px;
 }
 
-.col-md-2 p{
+
+
+.item1 i {
+    font-size: 40px;
+    padding-top: 40px;
+    color:#f39e7a ;
+}
+
+.item1 p{
     font-size: 15px;
 }
+
+.item1 a{
+    text-decoration: none;
+    color: #212529;
+    padding-top: 10px;
+    
+}
+
+/* End of Section 3 */
+
+
+/* Section 4 */
+
+.container-4{
+    height: 200vh;
+}
+
+.portfolio{
+    height: 150px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.portfolio h2{
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--font-color);
+    position: relative;
+}
+
+.portfolio h4 {
+    color:#c2b7b1 ;
+    font-size: 24px;
+    font-weight: 700px;
+}
+
+.portfolio h2::after{
+    content: " ";
+    width: 60px;
+    background-color:var(--main-color);;
+    height: 2px;
+    position: absolute;
+    left: 600px;
+    top:60px;
+    
+}
+
+.port-display{
+    display: grid;
+    grid-template-rows: 300px 300px 300px;
+    grid-template-columns: 350px 350px 350px;
+    gap: 30px;
+    justify-content: center;
+}
+.carousel-item img{
+    width: 350px;
+    height: 270px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.port-display-2{
+    display: grid;
+    grid-template-rows: 300px;
+    grid-template-columns: 350px 350px 350px;
+    gap: 30px;
+    justify-content: center;
+}
+.port-display-3{
+    display: grid;
+    grid-template-rows: 300px;
+    grid-template-columns: 350px 350px 350px;
+    gap: 30px;
+    justify-content: center;
+}
+
+
+
+
 
 
 @media screen and (max-width:1000px) {
