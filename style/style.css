@@ -338,8 +338,74 @@
     justify-content: center;
 }
 
+/* End of Section 4 */
+
+/* Section 5 */
+
+.sec5{
+    height: 120vh;
+    background-color: #fef8f5;
+}
+
+.FAQ{
+    height: 150px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.FAQ h2 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #c2b7b1;
+}
+
+.FAQ p{
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--font-color);
+    position: relative;
+}
 
 
+
+.FAQ p::after{
+    content: " ";
+    width: 60px;
+    background-color:var(--main-color);;
+    height: 2px;
+    position: absolute;
+    left: 600px;
+    top:60px;
+    
+}
+.list{
+    line-height: 2.5;
+    margin-left: 50px;
+    font-family: var(--fontb-family);
+    font-weight: 600;
+}
+
+.list a{
+    color: var(--fontlst-color);
+    font-size: 18px;
+    text-decoration: none;
+    
+}
+
+.list a:hover{
+
+    color: var(--main-color);
+
+}
+
+
+.list li{
+    list-style-type: none;
+}
+
+.list i {
+    font-size: 15px;
+}
 
 
 
@@ -355,3 +421,5 @@
         width: 100px;
     }
 }
+
+
