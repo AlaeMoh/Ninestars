@@ -267,14 +267,14 @@
     padding-top: 10px;
     
 }
-
+`
 /* End of Section 3 */
 
 
 /* Section 4 */
 
 .container-4{
-    height: 200vh;
+    height: 220vh;
 }
 
 .portfolio{
@@ -306,6 +306,29 @@
     top:60px;
     
 }
+ /* NavTab */
+
+ .tabs{
+    justify-items: center;
+    color: var(--fontlst-color);
+    padding-bottom: 10px;
+  }
+
+
+.tabs button{
+    color: #212529;
+    
+ }
+
+ .tabs button:hover{
+    color: var(--main-color);
+ }
+
+
+
+
+
+
 
 .port-display{
     display: grid;
@@ -605,4 +628,44 @@
 }
 
  /* End of section 6 */
+
+       /* Secyion7 */
+
+       .sec7{
+        height: 65vh;
+        background-color: tomato;
+
+       }
+
+       .clients{
+        height: 150px;
+        background-color: teal;
+        text-align: center;
+        padding-top: 20px;
+       }
+
+       .clients h3{
+        font-size: 24px;
+        font-weight: 700;
+        color: #c2b7b1;
+       }
+
+       .clients p{
+        font-size: 32px;
+        font-weight: 700;
+        color: #4e4039;
+        position: relative;
+       }
+
+       .clients p::after{
+        content: " ";
+        width: 60px;
+        background-color:var(--main-color);;
+        height: 2px;
+        position: absolute;
+        left: 600px;
+        top:60px;
+       }
+
+
 
