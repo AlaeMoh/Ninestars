@@ -259,6 +259,7 @@
 
 .item1 p{
     font-size: 15px;
+    color: var(--font-color);
 }
 
 .item1 a{
@@ -267,7 +268,7 @@
     padding-top: 10px;
     
 }
-`
+
 /* End of Section 3 */
 
 
@@ -614,16 +615,21 @@
 
 @media screen and (max-width:1000px) {
     
-    .sec1 .sec2{
+    .sec1 , .sec2 , .sec3 , .sec4 , .sec5 , .sec5 , .sec6{
         display: block;
     }
-    .container-2 , .container-3 , .container-4{
+    .container-2 , .container-3 , .container-4, .container-5{
         display: block;
         height: 200vh;
     }
     .pic2{
         width: 100px;
     }
+
+    .container-6{
+        height: 400vh;
+    }
+
 
 }
 
@@ -633,13 +639,12 @@
 
        .sec7{
         height: 65vh;
-        background-color: tomato;
+        background-color: #fef8f5;
 
        }
 
        .clients{
         height: 150px;
-        background-color: teal;
         text-align: center;
         padding-top: 20px;
        }
@@ -667,5 +672,25 @@
         top:60px;
        }
 
+       .diplay-logos{
+        padding-top: 20px;
+       }
+
+       .logo1{
+        width: 145px;
+        height: 55px;
+
+       }
 
 
+       .logos img{
+        width: 145px;
+        height: 55px;
+       }
+
+       .diplay-logos{
+        justify-content: center;
+        gap: 20px;
+       }
+
+       /* End Of Section 7 */
